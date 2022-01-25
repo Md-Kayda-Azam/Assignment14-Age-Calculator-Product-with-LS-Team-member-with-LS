@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    max-width: 1500px !important;
+}
+body{
+    background-image: linear-gradient(90deg , rgba(131, 71, 123, 0.486) , rgba(76, 115, 160, 0.425));
+}
+.devs-add-box{
+    display: none;
+    margin: 50px auto;
+}
+img{
+    max-width: 100%;
+}
+strong, label{
+    cursor: pointer;
+}
+.card{
+    background: #bfadc5;
+    margin-top: 110px;
+}
+.card-body{
+    background-image: linear-gradient(90deg , rgba(45, 143, 66, 0.295) , rgba(53, 35, 153, 0.363));
+}
+.team{
+    background-image:  linear-gradient(90deg , rgba(82, 83, 41, 0.39) , rgba(4, 212, 143, 0.363));
+    padding: 10px 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 7px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 590px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.team .team-img{
+    width: 150px;
+    height: 150px ;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(209, 195, 195);
+}
+.team h2{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.team p{
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(63, 48, 48);
+}
+small{
+    font-size: 17px;
+    font-weight: 500;
+}
+.list-group-item{
+    background-color: rgba(255, 255, 255, 0.308) !important;
+    text-align: left;
+    padding: 7px 20px;
+}
+
+.hr{
+    margin-bottom: 0;
+}
+.linkIcon {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 4%;
+	left: 50%;
+	right: 50%;
+}
+.linkIcon li{
+
+}
+.linkIcon li a{
+    height: 33px ;
+    width: 33px;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px ;
+    transition: .5s;
+    color: rgb(50, 168, 21);
+    border-radius: 100%;
+}
+.linkIcon li a:hover{
+    transform: translateY(-10px);
+    color: rgb(182, 25, 14);
+    background: rgb(54, 54, 177);
+}
+
+.team .round {
+	height: 350px;
+	width: 350px;
+	background-color: rgba(255, 255, 255, 0.294);
+	position: absolute;
+	top: -28%;
+	transform: rotate(135deg);
+	border-radius: 127px;
+	z-index: -1;
+	left: 0%;
+}
