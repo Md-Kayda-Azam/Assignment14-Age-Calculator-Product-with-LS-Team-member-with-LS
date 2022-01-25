@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.card .product-add-box {
+    margin-top: 110px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: .6s;
+    z-index: 100000;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+header .logo{
+    position: relative;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    padding: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: .6s;
+}
+.banner{
+    position: relative;
+    width: 105%;
+    height: 145vh;
+    background-color: rgb(0, 0, 0);
+    background: url(https://i.pinimg.com/564x/6d/dc/e7/6ddce73e5b5a32a2a6789605991ec0a7.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+
+
+
+/** Age Calculator All CSS */
+
+.container1 *{
+    font-family: "Poppins",sans-serif;
+    border: none;
+    outline: none;
+}
+.card1{
+    background: #0652DD;
+}
+.inputs-wrapper{
+    background-color: black;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0, 3);
+}
+button{
+    height: 50px;
+    background-color: #ffffff;
+    color: #080808;
+    font-weight: 5000;
+    border-radius: 5px;
+}
+#date-input{
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+button{
+    width: 30%;
+    float: right;
+}
+.outputs-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputs-wrapper div{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+    color: rgb(196, 0, 0);
+    display: grid;
+    place-items: center;
+}
