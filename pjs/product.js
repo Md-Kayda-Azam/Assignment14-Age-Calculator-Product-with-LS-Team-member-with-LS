@@ -1,4 +1,3 @@
-
 const namep = document.querySelector('#namep');
 const nppp = document.querySelector('#nppp');
 const imgg = document.querySelector('#imgg');
@@ -10,9 +9,9 @@ namep.addEventListener('keyup', () => {
 
     const agepattern = /^[a-zA-Z][^0-9\.!@#$%&]*$/;
 
-    if(namep.value == ''){
+    if (namep.value == '') {
         nppp.innerHTML = `<p class="alert-danger mt-1">*What's product name?*</p>`;
-   
+
 
     } else if (agepattern.test(agename) == false) {
         nppp.innerHTML = `<p class="alert-danger mt-1">
@@ -27,11 +26,11 @@ namep.addEventListener('keyup', () => {
 
 });
 
-imgg.addEventListener('keyup' , () =>{
+imgg.addEventListener('keyup', () => {
 
-    if(imgg.value == ''){
+    if (imgg.value == '') {
         immmm.innerHTML = `<p class="alert-danger mt-1">*plz type your LinkedIN URL*</p>`;
-    }else{
+    } else {
 
     };
 
@@ -46,16 +45,16 @@ const add_box = document.querySelector('.product-add-box');
 const product = document.getElementById('product');
 
 
-add_product.addEventListener('click', function(){
+add_product.addEventListener('click', function () {
     add_box.style.display = 'block';
 });
 
-sess.addEventListener('click', function(){
+sess.addEventListener('click', function () {
     add_box.style.display = 'none';
 });
 
 
-product.addEventListener('submit', function(e){
+product.addEventListener('submit', function (e) {
     e.preventDefault();
 
     let name = this.querySelector('input[name="name"]').value;
@@ -64,26 +63,26 @@ product.addEventListener('submit', function(e){
     let photo = this.querySelector('input[name="photo"]').value;
 
     let product_arr;
-    
-    if( dataGet('products') ){
+
+    if (dataGet('products')) {
         product_arr = dataGet('products');
-    }else{
+    } else {
         product_arr = [];
     }
 
 
     product_arr.push({
-        name    : name,
-        price   : price, 
-        sale    : sale, 
-        photo   : photo 
+        name: name,
+        price: price,
+        sale: sale,
+        photo: photo
     });
 
 
     dataSend('products', product_arr);
 
-    allProducts(); 
-    
+    allProducts();
+
 
 
 });
@@ -91,7 +90,8 @@ product.addEventListener('submit', function(e){
 
 
 allProducts();
-function allProducts(){
+
+function allProducts() {
 
     let all_products = dataGet('products');
 
@@ -106,7 +106,8 @@ function allProducts(){
                 <div class="card-body mt-2">
                     <p><b>${pdata.name}</b></p>
                     <p> <span class="price">$${pdata.price}</span>  <span class="sale-price">$${pdata.sale}</span> </p>
-                    <div class="add__toCartkkkkppp">
+                    <button style="height:25px;   width:25px;" class="Remove"> <i class="far fa-trash-alt"></i></button>
+                    <div class="add__toCart">
                     <i class="fas fa-shopping-cart"></i> Add
                 </div>
                 </div>
@@ -122,5 +123,3 @@ function allProducts(){
 
 
 }
-
-

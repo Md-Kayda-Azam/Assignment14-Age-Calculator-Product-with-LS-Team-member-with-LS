@@ -28,15 +28,30 @@ body{
   background: red;
 }
 
-.add__toCartkkkkppp{
-  background-color: rgb(135, 211, 141);
-  color: #ffff;
-  text-align: center;
-  border-radius: 8px
-};
+.add__toCart {
+  margin-left: 15px;
+  position: relative;
+  display: inline-block;
+  padding: 6px 20px 6px 20px;
+  border-radius: 4px;
+  background-color: #3BB77E;
+  font-size: 14px;
+  color: #000000ab;
+  transition: 0.4s;
+  cursor: pointer;
+}
 
+.add__toCart:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
 .card{
   background: rgb(199, 155, 155);
+
 }
 .card-body{
   background-image: linear-gradient(90deg , rgba(71, 131, 84, 0.486) , rgba(160, 151, 76, 0.425));
